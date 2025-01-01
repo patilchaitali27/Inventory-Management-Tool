@@ -1,16 +1,12 @@
 package com.chaitali.controller;
-
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
 import com.chaitali.dao.InventoryDao;
 import com.chaitali.inventorydb.IssueProcesed;
 import com.chaitali.inventorydb.IssueRaw;
@@ -134,6 +130,7 @@ public class MainController {
 	{
 		return "AddProcessedMaterial";
 	}
+	
 	@RequestMapping(path="/addProcessed",method=RequestMethod.POST)
 	public String AddProcessedPage(@ModelAttribute ProcessedMaterial processedMaterial)
 	{
@@ -198,6 +195,7 @@ public class MainController {
 			return "UpdateProcessedMaterial";
 		}
 	}
+	
 	@RequestMapping("/unavailableProcessedPage")
 	public String OpenUnavailableProcessedPage(Model m)
 	{
