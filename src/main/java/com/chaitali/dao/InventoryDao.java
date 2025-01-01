@@ -1,14 +1,10 @@
 package com.chaitali.dao;
-
 import java.util.List;
-
 import javax.persistence.NamedQuery;
 import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Component;
-
 import com.chaitali.inventorydb.IssueProcesed;
 import com.chaitali.inventorydb.IssueRaw;
 import com.chaitali.inventorydb.Manager;
